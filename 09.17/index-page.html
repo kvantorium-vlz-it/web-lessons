@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+
+            border: 1px solid black;
+        }
+        .header__logo {
+
+        }
+        .header__mavigation {
+
+        }
+        .navigation {
+            border: 1px solid black;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .navigation__list {
+            display: flex;
+            gap: 10px;
+            list-style: none;
+        }
+
+        .page {
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .page__aside {
+            width: 200px;
+        }
+
+        .aside {
+            position: relative;
+            border: 1px solid black;
+        }
+        .aside__button {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+        }
+
+        .main {
+
+        }
+        .main__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main__item {
+            max-width: calc(100% / 3);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            logo
+        </div>
+
+        <nav class="header__navigation navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    Lorem.
+                </li>
+                <li class="navigation__item">
+                    Lorem.
+                </li>
+                <li class="navigation__item">
+                    Lorem.
+                </li>
+                <li class="navigation__item">
+                    Lorem.
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page">
+        <main class="page__main main">
+
+            <input class="main__search" type="text">
+
+            <div class="main__list">
+                <div class="main__item item">
+                    <h2 class="item__heading">
+                        Lorem, ipsum.
+                    </h2>
+
+                    <p class="item__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, laborum?
+                    </p>
+                </div>
+
+                <div class="main__item item">
+                    <h2 class="item__heading">
+                        Lorem, ipsum.
+                    </h2>
+
+                    <p class="item__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, laborum?
+                    </p>
+                </div>
+
+                <div class="main__item item">
+                    <h2 class="item__heading">
+                        Lorem, ipsum.
+                    </h2>
+
+                    <p class="item__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, laborum?
+                    </p>
+                </div>
+
+                <div class="main__item item">
+                    <h2 class="item__heading">
+                        Lorem, ipsum.
+                    </h2>
+
+                    <p class="item__paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, laborum?
+                    </p>
+                </div>
+            </div>
+
+        </main>
+
+        <aside class="page__aside aside">
+            <h3 class="aside__heading">
+                Lorem, ipsum dolor.
+            </h3>
+
+            <p class="aside__paragraph">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque praesentium eveniet delectus illum magni nobis sed necessitatibus iusto! Assumenda, praesentium.
+            </p>
+
+            <button class="aside__button">
+                Lorem, ipsum.
+            </button>
+        </aside>
+    </div>
+</body>
+</html>

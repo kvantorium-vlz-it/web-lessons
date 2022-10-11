@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Group {
+            color: var(--primary);
+            background-color: var(--bg-2);
+        }
+        .Group__highlight {
+            color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, enim?
+    </header>
+    <div class="Group">
+        <h1>
+            Lorem ipsum dolor sit amet.
+        </h1>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            <span class="Group__highlight">
+                Quisquam tenetur explicabo
+            </span>
+            in, dolores <br> minus debitis odit id quam incidunt reprehenderit.
+        </p>
+    </div>
+    <a href="https://google.com">
+        google
+    </a>
+
+    <a href="https://google.com">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/800px-Google_Chrome_icon_%28February_2022%29.svg.png" alt="Лого гугла" width="150" height="150">
+    </a>
+
+    <style>
+        :root {
+            --primary: rgb(112, 203, 203);
+            --accent: rgb(133, 10, 10);
+            --bg-1: rgb(28, 28, 28);
+            --bg-2: rgb(17, 17, 17);
+            --bg-3: rgb(59, 59, 59);
+        }
+        .menu {
+            background-color: var(--bg-2);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 30px;
+            border: 10px solid green;
+            margin: 60px;
+            position: relative;
+        }
+        .menu__item {
+            max-width: calc(50% - 15px);
+            color: var(--primary);
+            background-color: var(--bg-1);
+        }
+        .menu__item--accent {
+            color: var(--accent);
+        }
+        .menu__button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+    </style>
+
+    <div class="menu">
+        <p class="menu__item menu__item--accent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rerum.
+        </p>
+        <p class="menu__item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rerum.
+        </p>
+        <p class="menu__item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rerum.
+        </p>
+        <button class="menu__button">
+            @
+        </button>
+    </div>
+
+    <style>
+        .header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: var(--bg-3);
+            color: var(--primary);
+        }
+    </style>
+</body>
+</html>
