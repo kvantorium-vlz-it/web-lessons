@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.sel1 {
+            text-decoration: underline;
+        }
+        .sel1 .sel2 {
+            color: red;
+        }
+        .sel2 + .sel1 {
+            font-size: 20px;
+        }
+        .sel2 ~ .sel1 {
+            background-color: burlywood;
+        }
+        .sel1 > .sel2 {
+            font-style: italic;
+        }
+        .btn {
+            padding: 30px;
+            border-width: 10px;
+            margin: 10px;
+            background-color: aquamarine;
+        }
+        .btn-small {
+            padding: 10px;
+            border-width: 2px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">
+        click me
+    </button>
+
+    <button class="btn-small"></button>
+
+    <hr>
+
+    <div class="sel1">Lorem, ipsum.</div>
+    <div class="sel1">
+        <div class="sel2">Lorem, ipsum.</div>
+    </div>
+    <div class="sel2">Lorem, ipsum.</div>
+    <div class="sel2">Lorem, ipsum.</div>
+    <div class="sel1">Lorem, ipsum.</div>
+    <div class="sel2">Lorem, ipsum.</div>
+    <div class="sel1">
+        <div class="sel3">
+            <div class="sel2">Lorem, ipsum.</div>
+        </div>
+    </div>
+</body>
+</html>
