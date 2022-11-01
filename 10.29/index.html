@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .logo-image {
+            height: calc(20px + 10px);
+            width: calc(20px + 10px);
+            background-color: brown;
+            border-radius: 100vw;
+        }
+        .logo-text-top {
+            font-size: 20px;
+            line-height: 1;
+        }
+        .logo-text-bottom {
+            font-size: 10px;
+            line-height: 1;
+        }
+        .navigation {
+            /* border: 1px solid black; */
+            display: inline-block;
+        }
+        .navigation-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        .header {
+            border: 1px solid black;
+            max-width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 64px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="logo-image"></div>
+            <div class="logo-text">
+                <div class="logo-text-top">
+                    Lorem.
+                </div>
+                <div class="logo-text-bottom">
+                    Lorem, ipsum.
+                </div>
+            </div>
+        </div>
+        <!-- div>(div+div>div*2) -->
+        <!-- .logo>(.logo-image+.logo-text>(.logo-text-top+.logo-text-bottom)) -->
+
+        <div class="navigation">
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a class="navigation-link" href="">Lorem, ipsum.</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="">Lorem, ipsum.</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="navigation-link" href="">Lorem, ipsum.</a>
+                </li>
+            </ul>
+        </div>
+        <!-- div>ul>(li>a)*3 -->
+        <!-- .navigation>ul.navigation-list>(li.navigation-item>a.navigation-link)*3 -->
+    </div>
+</body>
+</html>
