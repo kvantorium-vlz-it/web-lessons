@@ -1,0 +1,124 @@
+/* Normalize */
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* Header block */
+.header {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+.header__menu-button {
+    position: absolute;
+    left: 16px;
+}
+.header__logo {
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+/* Logo block */
+.logo {
+    display: inline-block;
+    width: 129px;
+    height: 22px;
+    /* rem: 129 / 16px = 8.0625rem */
+    /* width: 8.0625rem; */
+    /* rem с размером шрифта в html в 10px 129 / 10px = 12.9rem */
+    background-color: antiquewhite;
+}
+
+.hero {
+    padding: 78px 16px 0;
+}
+.hero__heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F284F;
+    margin-bottom: 16px;
+}
+.hero__paragraph {
+    font-size: 18px;
+    font-weight: normal;
+    color: #575757;
+    margin-bottom: 16px;
+}
+
+.hero__form {}
+.hero-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.hero-form__radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.hero-form__input {
+    height: 20px;
+    width: 20px;
+}
+.hero-form__label {
+    font-size: 16px;
+    font-weight: normal;
+    color: #17181A;
+}
+.hero-form__button {
+    margin-top: 16px;
+}
+
+.button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    border-radius: 30px;
+    border: none;
+    padding: 12px 16px;
+    width: fit-content;
+}
+.button--full {
+    width: 100%;
+}
+.button--green {
+    color: #FFFFFF;
+    background-color: #3CBA79;
+}
+
+.hero__footer {
+    margin-top: 16px;
+}
+.hero-footer {}
+.hero-footer__title {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+.hero-footer__companies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 8px;
+    list-style: none;
+}
+.hero-footer__company {
+    padding: 27px 3px;
+}
+.company {
+    width: 90px;
+    height: 18px;
+    background-color: brown;
+}
