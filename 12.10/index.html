@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        :root {
+            --border: black;
+            --heading-text: darkslategray;
+            --paragraph-text: gray;
+            --image: bisque;
+            --decoration: brown;
+        }
+        html.dark {
+            --border: rgb(96, 87, 87);
+            --heading-text: rgb(143, 212, 212);
+            --paragraph-text: rgb(114, 31, 31);
+            --image: rgb(112, 108, 102);
+            --decoration: rgb(161, 190, 174);
+        }
+        .card {
+            --decration-width: 8px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-template-areas: "info image";
+        
+            border: 1px solid var(--border);
+        }
+        .card--big-decoration {
+            --decration-width: 20px;
+        }
+        .card__info {
+            grid-area: info;
+            position: relative;
+            padding: calc(var(--decration-width) + 4px);
+        }
+        .card__info::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: var(--decration-width);
+            height: 10%;
+            background-color: var(--decoration);
+        }
+        .card__image {
+            grid-area: image;
+
+            aspect-ratio: 1;
+            background-color: var(--image);
+            border-left: 1px solid var(--border);
+        }
+        .card__heading {
+            color: var(--heading-text);
+        }
+        .card__paragraph {
+            color: var(--paragraph-text);
+        }
+    </style>
+
+    <div class="card">
+        <div class="card__info">
+            <h2 class="card__heading">
+                Lorem, ipsum.
+            </h2>
+            <p class="card__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, aspernatur.
+            </p>
+        </div>
+        <div class="card__image"></div>
+    </div>
+
+    <div class="card">
+        <div class="card__info">
+            <h2 class="card__heading">
+                Lorem, ipsum.
+            </h2>
+            <p class="card__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, aspernatur.
+            </p>
+        </div>
+        <div class="card__image"></div>
+    </div>
+</body>
+</html>

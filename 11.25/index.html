@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">
+            Имя
+        </label>
+        <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="имя, которое будет видно всем пользователям"
+        >
+
+        <br>
+
+        <label for="age">
+            возраст
+        </label>
+        <input
+            type="number"
+            name="age"
+            id="age"
+            min="0"
+            max="100"
+            step="1"
+            value="14"
+            placeholder="ваш возраст(от 0 до 100)"
+        >
+
+        <br>
+        
+        <span>Пол</span>
+        <input type="radio" name="sex" id="male">
+        <label for="male">м</label>
+
+        <input type="radio" name="sex" id="female">
+        <label for="female">ж</label>
+
+        <br>
+
+        <label for="about">О себе</label>
+        <textarea name="about" id="about" cols="30" rows="10">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, corrupti!
+        </textarea>
+
+        <br>
+
+        <label for="typeOfProgrammer">Какой ты программист</label>
+        <select name="typeOfProgrammer" id="typeOfProgrammer">
+            <option value="0">frontend</option>
+            <option value="1">backend</option>
+            <option value="2">mobile</option>
+            <option value="3">desktop</option>
+            <option disabled selected>ваше направление в программировании</option>
+        </select>
+
+        <br>
+
+        <!-- <input type="button" > -->
+        <button>зарегироваться</button>
+    </form>
+</body>
+</html>

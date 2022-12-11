@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .link {
+            display: inline-block;
+            border: 1px solid black;
+            padding: 8px;
+            border-radius: 4px;
+            background-color: azure;
+            color: brown;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .link.link--inverse {
+            background-color: brown;
+            color: azure;
+        }
+
+        .navigation {
+            display: inline-flex;
+            gap: 4px;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 4px;
+        }
+        .navigation--vertical {
+            flex-direction: column;
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            background-color: antiquewhite;
+            justify-content: flex-start;
+
+            width: 250px;
+
+            z-index: 2;
+        }
+        .navigation__link {
+            position: relative;
+        }
+        .navigation__link:hover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <a href="" class="link">Lorem, ipsum.</a> -->
+    <!-- <a href="" class="link link--inverse">Lorem, ipsum.</a> -->
+    <nav class="navigation navigation--vertical">
+        <a class="navigation__link link" href="">
+            Lorem, ipsum.
+        </a>
+        <a class="navigation__link link" href="">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, laborum!
+        </a> 
+        <a class="navigation__link link link--inverse" href="">
+            Lorem, ipsum.
+        </a>
+    </nav>
+
+    <nav class="navigation">
+        <a class="navigation__link link" href="">
+            Lorem, ipsum.
+        </a>
+        <a class="navigation__link link" href="">
+            Lorem, ipsum.
+        </a>
+        <a class="navigation__link link link--inverse" href="">
+            Lorem, ipsum.
+        </a>
+    </nav>
+
+    <a class="link link--inverse" href="">
+        Lorem, ipsum.
+    </a>
+</body>
+</html>
