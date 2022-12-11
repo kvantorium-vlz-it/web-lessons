@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal {
+            min-width: 200px;
+            max-width: 80vw;
+
+            min-height: 200px;
+            max-height: 80vh;
+
+            background-color: white;
+            border: 1px solid black;
+
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .modal--close {
+            display: none;
+        }
+        .modal__close-button {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button id="open-modal">
+        open modal
+    </button>
+
+    <div class="modal modal--close" id="modal">
+        <button class="modal__close-button" id="close-modal">
+            x
+        </button>
+    </div>
+
+    <canvas
+        width="300"
+        height="150"
+        id="canvas"
+        style="border: 1px solid black;"
+    ></canvas>
+
+    <script src="./script.js"></script>
+</body>
+</html>
